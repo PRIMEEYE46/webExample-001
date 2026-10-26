@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing | The Car Cave</title>
+  <meta name="description" content="Car wash and detailing prices for cars and SUVs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main">
+      <a class="brand" href="index.html" data-brand>The Car Cave</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="pricing.html" aria-current="page">Pricing</a>
+        <div class="contact-cus">
+          <img src="icons/icons8-phone-50.apng.png" alt="">
+          <a href="#contact" data-tel>Contact Us</a>
+        </div>
+      </div>
+      <div class="BookN-cus"><a href="#contact" data-whatsapp>Book Now</a></div>
+    </nav>
+  </header>
+  <main class="section">
+    <div class="price-head">
+      <p class="eyebrow">Pricing</p>
+      <h1 class="section-title">Pick your wash</h1>
+      <div class="toggle" role="group" aria-label="Vehicle type">
+        <button type="button" data-type="car" aria-pressed="true">Car</button>
+        <button type="button" data-type="suv" aria-pressed="false">SUV</button>
+      </div>
+    </div>
+    <div class="price-grid">
+      <article class="ticket" style="--lvl:1" data-car="40" data-suv="55">
+        <div class="top"><h3>Wash &amp; Go</h3><p class="sub">Quick exterior refresh</p>
+          <div class="price"><small>R</small><b>40</b><i class="meter" role="img" aria-label="Level 1 of 7"></i></div></div>
+        <details open><summary>What's included</summary><ul><li>Exterior wash</li><li>Windows wiped</li><li>Quick dry</li></ul></details>
+      </article><article class="ticket" style="--lvl:2" data-car="65" data-suv="85">
+        <div class="top"><h3>Wash, Dry &amp; Tyre Shine</h3><p class="sub">Clean, dry, glossy tyres</p>
+          <div class="price"><small>R</small><b>65</b><i class="meter" role="img" aria-label="Level 2 of 7"></i></div></div>
+        <details open><summary>What's included</summary><ul><li>Full exterior wash</li><li>Hand dry</li><li>Tyre shine</li></ul></details>
+      </article><article class="ticket ticket--feat" style="--lvl:3" data-car="80" data-suv="100">
+        <div class="top"><h3>Full House</h3><p class="sub">Inside and out</p>
+          <div class="price"><small>R</small><b>80</b><i class="meter" role="img" aria-label="Level 3 of 7"></i></div></div>
+        <details open><summary>What's included</summary><ul><li>Full exterior wash and dry</li><li>Interior vacuum</li><li>Dashboard wipe-down</li><li>Windows inside and out</li><li>Tyre shine</li></ul></details>
+      </article><article class="ticket" style="--lvl:4" data-car="90" data-suv="110">
+        <div class="top"><h3>Engine Wash</h3><p class="sub">Under-the-bonnet clean</p>
+          <div class="price"><small>R</small><b>90</b><i class="meter" role="img" aria-label="Level 4 of 7"></i></div></div>
+        <details open><summary>What's included</summary><ul><li>Engine bay degrease</li><li>Rinse and dry</li><li>Protectant dressing</li></ul></details>
+      </article><article class="ticket" style="--lvl:5" data-car="200" data-suv="250">
+        <div class="top"><h3>Full House &amp; Hand Polish</h3><p class="sub">Full House plus a gloss finish</p>
+          <div class="price"><small>R</small><b>200</b><i class="meter" role="img" aria-label="Level 5 of 7"></i></div></div>
+        <details open><summary>What's included</summary><ul><li>Everything in Full House</li><li>Hand-applied polish</li><li>Deep gloss finish</li></ul></details>
+      </article><article class="ticket" style="--lvl:6" data-car="450" data-suv="620">
+        <div class="top"><h3>Auto Valet</h3><p class="sub">Deep clean, top to bottom</p>
+          <div class="price"><small>R</small><b>450</b><i class="meter" role="img" aria-label="Level 6 of 7"></i></div></div>
+        <details open><summary>What's included</summary><ul><li>Deep interior clean</li><li>Seat and carpet shampoo</li><li>Full exterior wash</li><li>Tyre and trim dressing</li></ul></details>
+      </article><article class="ticket" style="--lvl:7" data-car="650" data-suv="820">
+        <div class="top"><h3>F.H + Claybar &amp; Hand Polish</h3><p class="sub">Smooth paint, deep gloss</p>
+          <div class="price"><small>R</small><b>650</b><i class="meter" role="img" aria-label="Level 7 of 7"></i></div></div>
+        <details open><summary>What's included</summary><ul><li>Everything in Full House</li><li>Claybar paint treatment</li><li>Hand polish</li></ul></details>
+      </article>
+      <aside class="ticket-cta">
+        <h3>Not sure which one?</h3>
+        <p>Tell us about your car and we'll point you to the right wash.</p>
+        <a href="#contact" data-whatsapp>Get a quote</a>
+      </aside>
+    </div>
+    <p class="price-note">Prices are in Rand and are a guide. Vehicle size and condition can change the final price.</p>
+  </main>
+  <footer class="site-footer" id="contact">
+    <div class="footer-grid">
+      <div>
+        <h3 data-brand>The Car Cave</h3>
+        <p>Car wash and detailing. Book on WhatsApp or give us a call.</p>
+      </div>
+      <div><h3>Contact</h3><a href="#contact" data-phone></a><a href="#contact" data-whatsapp>WhatsApp us</a><a href="#contact" data-email></a></div>
+      <div><h3>Hours</h3><p data-hours></p></div>
+      <div><h3>Where to find us</h3><p data-area></p><a href="index.html#location">See the map</a></div>
+    </div>
+    <p class="copyright">&copy; <span data-year>2026</span> <span data-brand>The Car Cave</span>. All rights reserved.</p>
+  </footer>
+  <script src="js/site.js"></script>
+</body>
+</html>
